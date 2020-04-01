@@ -32,21 +32,24 @@ module.exports = [
 			],
 
 			module: {
-							rules: [
-									/* need to set .babelrc config */
-									{
+				rules: [
+					/* need to set .babelrc config */
+					{
 						test: /\.(js|jsx)?$/,
 						exclude: /(node_modules|bower_components)/, // ignore folder
-						loader: 'babel-loader'
+						loader: 'babel-loader',
+						options: {
+							presets: ["stage-2", "react"]
+						}
 					},
-									{   
-											test: /\.css?$/, 
-											loader: 'css-loader'
+					{   
+						test: /\.css?$/, 
+						loader: 'css-loader'
 					},
 					{   
 						test: /\.(png|jpg|jpeg|gif)$/,
 						// use: 'url-loader?limit=1024&name=[path][name].[hash:10].[ext]&outputPath=img/&publicPath=output/',
-											use: [
+						use: [
 							{
 								loader: 'file-loader',
 								options: {
@@ -67,8 +70,8 @@ module.exports = [
 								}
 							}
 						]
-									},
-							]
+					},
+				]
 			},
 		
 			resolve: {

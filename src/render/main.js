@@ -5,5 +5,5 @@ import MainPage from 'Components/MainPage';
 import path from 'path';
 
 ReactDOM.render((
-    <MainPage />
+	<MainPage />
 ), document.getElementById('app'));
