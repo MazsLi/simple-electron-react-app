@@ -15,30 +15,4 @@ function MainPage() {
 	)
 }
 
-class MainPageOld extends React.Component{
-
-	componentWillMount = () => {
-		debug('componentWillMount...');
-	}
-
-	componentWillUnmount = () => {
-		
-	}
-
-	componentDidMount = () => {
-		debug('componentDidMount...');
-	}
-
-	render() {
-		
-		debug('render...');
-
-		return (
-			<div>
-				<SimpleCard/>
-		 	</div>
-		)
-	}
-}
-
 export default MainPage;
