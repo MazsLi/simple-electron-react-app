@@ -20,7 +20,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
     "debug": "^3.1.0",
-    "electron": "^8.1.0",
+    "electron": "^15.5.5",
     "file-loader": "^1.1.11",
     "prop-types": "^15.6.2",
     "react": "^16.13.0",
